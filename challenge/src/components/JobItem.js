@@ -13,6 +13,14 @@ export function JobItem({ job, candidate }) {
     }
     setStatus("loading");
     setError(null);
+
+    console.log("Enviando:", {
+      uuid: candidate.uuid,
+      jobId: job.id,
+      candidateId: candidate.candidateId,
+      repoUrl: repoUrl.trim(),
+    });
+
     try {
       await applyToJob({
         uuid: candidate.uuid,
