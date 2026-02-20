@@ -20,7 +20,7 @@ export default function App() {
         {!loading && !error && candidate && (
           <>
             <p style={styles.welcome}>
-              Hola, <strong>{candidate.firstName} {candidate.lastName}</strong> — seleccioná la posición y pegá tu repo para postularte.
+              seleccioná la posición y pegá tu repo para postularte.
             </p>
             <JobList jobs={jobs} candidate={candidate} />
           </>
